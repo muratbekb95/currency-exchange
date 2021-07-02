@@ -1,0 +1,16 @@
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th>Покупка</th>
+            <th>Валюта</th>
+            <th>Продажа</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tempCurrency of currencies">
+            <td class="align-middle">{{ tempCurrency.purchase }}</td>
+            <td class="align-middle">{{ tempCurrency.currency }}</td>
+            <td class="align-middle">{{ tempCurrency.sell }}</td>
+        </tr>
+    </tbody>
+</table>
